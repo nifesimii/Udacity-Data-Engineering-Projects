@@ -20,7 +20,7 @@ def create_database():
     #     "CREATE DATABASE sparkifydb WITH ENCODING 'utf8' TEMPLATE template0")
 
     # close connection to default database
-    # conn.close()
+    conn.close()
 
     # connect to sparkify database
     conn = psycopg2.connect(
